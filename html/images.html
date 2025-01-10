@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Images </h1>
+    <!--relative url-->
+    <img src="img/picture.jpg" alt="EPAM LOGO" width="500" height="600"/>
+    <hr>
+    <a href="http://www.epam.com/"> Go To EPAM Website</a>
+    <hr>
+    <a href="http://www.epam.com/">
+        <img src="img/picture.jpg"/>
+    </a>
+    <hr>
+    <!-- absolute url-->
+    <img src="https://www.bing.com/images/search?view=detailV2&ccid=10R6rbZL&id=F7AF0FCB0E60F7BE3EFCC5453C798D3BF5FF1E51&thid=OIP.10R6rbZLmkhfgQfod2DD7gHaEK&mediaurl=https%3a%2f%2fdevby.io%2fstorage%2fimages%2f29%2f46%2f87%2f25%2fderived%2ffc3c0b64659916359c00adc7031350b8.jpg&exph=657&expw=1168&q=epam&simid=608050508293603818&FORM=IRPRST&ck=71AB2F34E53A1BCFF893729CAC5B468C&selectedIndex=7&itb=0"/>
+    <hr>
+    <!-- target specifying a browsing context -->
+    <a href="https://www.google.com" target="_blank">Open in New Tab</a><br>
+    <a href="https://www.google.com" target="_self">Open in Same Tab</a><br>
+    <a href="https://www.google.com" target="_parent">Open in Parent Tab</a><br>
+    <a href="https://www.google.com" target="_top">Open in full body of window</a><br>
+    <a href="https://www.google.com" target="_googlemine">Open in Named Tab</a><br>
+    <hr>
+    <!-- type specifying the MIME type -->
+    <!-- <a href="https://www.example.com/file.pdf" type="application/pdf">Download PDF</a><br>
+    <hr> -->
+    <!-- download attribute for downloading a file -->
+    <a src="img/picture.jpg" download="picture.jpg">Download Image</a>
+    <hr>
+    <!--Anchor-->
+    <h1 id="top">Top</h1>
+    <a href="#top">Go to Top</a>
+    <hr>
+    <a href="tel:+04951234567">+0 (495) 123-45-67</a><br>
+    <a href="mailto:example@mail.com">example@mail.com</a>
+</body>
+</html>
