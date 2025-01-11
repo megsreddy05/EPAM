@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form with Various Tags</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Select dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <optgroup label="Binary">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </optgroup>
+                <optgroup label="Non-binary">
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </optgroup>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <!-- Button -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br><br>
+
+        <!-- Datalist -->
+        <label for="browser">Favorite Browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <br><br>
+
+        <!-- Output -->
+        <label for="calculation">Calculation Result:</label>
+        <output id="calculation">42</output>
+    </form>
+</body>
+</html>

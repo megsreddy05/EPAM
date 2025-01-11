@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar with Responsive Image</title>
+</head>
+<body>
+    <h1>Downloading Progress</h1>
+    
+    <!-- Progress bar -->
+    <label for="file-progress">File Download Progress:</label>
+    <progress id="file-progress" value="70" max="100"></progress>
+    <p>70% completed</p>
+    
+    <h2>Responsive Image</h2>
+    
+    <!-- Picture tag for responsive images -->
+    <picture>
+        <!-- High-resolution image for wide screens -->
+        <source srcset="images/large.jpg" media="(min-width: 1200px)">
+        <!-- Medium-resolution image for medium screens -->
+        <source srcset="images/medium.jpg" media="(min-width: 600px)">
+        <!-- Low-resolution image for small screens -->
+        <img src="images/small.jpg" alt="A descriptive image for the progress bar">
+    </picture>
+    <!--If the screen width is 1200px or more, the browser loads images/large.jpg.
+If the screen width is between 600px and 1200px, the browser loads images/medium.jpg.
+If the screen width is less than 600px, the browser loads images/small.jpg.
+If the browser doesn't support the <picture> tag, it will use the <img> tag as a fallback.-->
+    
+    <p>The image adapts to different screen sizes using the <code>picture</code> tag for optimal performance.</p>
+</body>
+</html>

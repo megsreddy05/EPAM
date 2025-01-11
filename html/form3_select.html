@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="pet-form" action="/submit" method="post">
+        <label for="pet-select">Choose your favorite pet(s):</label>
+        <select 
+            name="pets" 
+            id="pet-select" 
+            form="pet-form" 
+            size="3" 
+            multiple 
+            required 
+            autocomplete="off" 
+            autofocus 
+            disabled
+        >
+            <option value="">Please choose an option</option>
+            <option value="dog">DOG</option>
+            <option value="cat">CAT</option>
+            <option value="fish">GOLDFISH</option>
+        </select><hr>
+        <select name="pets" id="pet-select">
+            <option value="">Please choose an opetion</option>
+            <option value="dog">DOG</option>
+            <option value="cat">CAT</option>
+            <option value="fish">GOLDFISH</option><br><br>
+         </select>
+         <hr>
+         <div>
+            <label for="chess">Do you like Chess?</label>
+            <input type="checkbox" name="chess" id="chess"/>
+         </div>
+    </form>
+</body>
+</html>
